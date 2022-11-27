@@ -1,0 +1,214 @@
+@font-face{
+    font-family: Prata;
+    src: url(fonts/Inter\,Prata/Prata-Regular.ttf);
+}
+
+@font-face{
+    font-family: Inter;
+    src: url(fonts/Inter\,Prata/Inter-Regular.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main-box{
+    width: 100vw;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.section-box{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: hsl(210, 52%, 93%);
+    color: #000;
+}
+
+.header{
+    height: 100vh;
+    transition: 0.5s ease-in;
+}
+
+#header-title{
+    font-family: Inter;
+}
+
+.btn-title{
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.about{
+    height: 35vh;
+    margin: 0;
+}
+
+#about-title{
+    font-family: Inter;
+}
+
+#about-para{
+    width: 80vw;
+    font-family: Prata;
+    text-align: center;
+}
+
+
+.content{
+    height: 55vh;
+}
+
+.content-list{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0;
+    list-style-type: none;
+}
+
+.logo-image{
+    width: 8vw;
+    height: auto;
+}
+
+#content-title{
+    font-family: Inter;
+}
+
+#image-text{
+    font-family: Prata;
+    text-align: center;
+}
+
+
+.project{
+    list-style-type: none;
+
+    width: 100vw;
+    height: 180vh;
+}
+
+#project-title{
+    font-family: Inter;
+}
+
+.project-list{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 0 7vh;
+    list-style-type: none;
+}
+
+.list-project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 0 0 8vh;
+}
+
+#project-child{
+    font-family: Prata;
+    color: #067eed;
+    text-decoration: none;
+}
+
+.project-ss{
+    margin-top: 0.8rem;
+
+    width: 50vw;
+    height: auto;
+    box-shadow: 3px 5px 13px #ddd;
+}
+
+
+.footer{
+    height: 23vh;
+    background: coral;
+}
+
+#footer-title{
+    font-family: Inter;
+}
+
+.footer-list{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0;
+    list-style-type: none;
+}
+
+.list-social-media img {
+    width: 30px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px){
+    .section-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .section-box:nth-child(3){
+        justify-content: flex-start;
+    }
+
+    .section-box:nth-child(4){
+        justify-content: flex-start;
+    }
+
+    .about{
+        height: 45vh;
+    }
+
+    .content{
+        height: 67vh;
+    }
+
+    .content-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .logo-image{
+        margin-top: 2vh;
+        width: 13vw;
+        height: auto;
+    }
+
+    #image-text{
+        text-align: center;
+    }
+
+    .project{
+        height: 78vh;
+    }
+
+    .footer{
+        height: 22vh;
+    }
+}
